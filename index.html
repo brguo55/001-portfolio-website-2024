@@ -75,32 +75,13 @@
   >
     <div id="siteWrapper" class="clearfix site-wrapper">
       <header data-test="header" id="header" class="header theme-col--primary">
-        <div class="sqs-announcement-bar-dropzone"></div>
-
         <div class="header-announcement-bar-wrapper">
           <a
-            href="https://chrishandyecon.com/about#page"
+            href="#page"
             class="header-skip-link sqs-button-element--primary"
           >
             Skip to Content
           </a>
-
-        
-          <div
-            class="header-border"
-            data-header-style="dynamic"
-            data-header-usability-enabled="true"
-            data-header-border="false"
-            data-test="header-border"
-            style="border-width: 0px !important"
-          ></div>
-          <div
-            class="header-dropshadow"
-            data-header-style="dynamic"
-            data-header-usability-enabled="true"
-            data-header-dropshadow="false"
-            data-test="header-dropshadow"
-          ></div>
 
           <div
             class="header-inner container--fluid header-mobile-layout-logo-left-nav-right header-layout-nav-right"
@@ -354,7 +335,7 @@
                     <div
                       class="container header-menu-nav-item header-menu-nav-item--external"
                     >
-                      <a href="https://chrishandyecon.com/s/Handy-CV.pdf">CV</a>
+                      <a href="javascript:void(0);" onclick="openModal()">CV</a>
                     </div>
 
                     <div
@@ -387,6 +368,13 @@
                     >
                       <a href="site_html/accolade.html">
                         <div class="header-menu-nav-item-content">Accolade</div>
+                      </a>
+                    </div>
+                    <div
+                      class="container header-menu-nav-item header-menu-nav-item--collection"
+                    >
+                      <a href="site_html/miscellaneous.html">
+                        <div class="header-menu-nav-item-content">Miscellaneous</div>
                       </a>
                     </div>
                   </div>
@@ -466,8 +454,6 @@
                                 <div class="image-subtitle sqs-dynamic-text" style="font-size: max(0.75rem, 37.7%);">
                                   <p class="" style="white-space:pre-wrap;">Email: <a href="mailto:brguo55@gmail.com">brguo55@gmail.com</a></p></div></div>
                             
-                                  <!-- 123 -->
-
                               </div>
                             </figcaption>
                           </figure>
@@ -539,11 +525,8 @@
     </script>
     
     <script>
-      var last_modified_date = new Date() // pass other objects
-      var dateObj = new Date(document.lastModified)
-      // document.write(Date.now());
+      var last_modified_date = new Date()
       document.write(last_modified_date.toDateString())
-      document.write(footer_date());
 
       // 打开模态框的函数
       function openModal() {
